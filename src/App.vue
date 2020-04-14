@@ -1,28 +1,43 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <main-menu />
+    <root-modals />
+    <router-view />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MainMenu from './components/main-menu/MainMenu';
+import RootModals from './components/root-modals/RootModals';
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    MainMenu,
+    RootModals,
+  },
+};
 </script>
 
 <style>
+html {
+  background: #555555;
+}
+
+html, body {
+  margin: 0;
+  min-height: 100%;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+
+.scroll-disabled {
+  overflow: hidden;
 }
 </style>

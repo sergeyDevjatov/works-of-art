@@ -1,4 +1,8 @@
-# art-objects-list
+# Works of art
+
+Before you build the project create `.env.local` file
+based on the `.env.local.example`
+and put an actual api key into the `VUE_APP_API_KEY` variable
 
 ## Project setup
 ```
@@ -14,11 +18,3 @@ yarn serve
 ```
 yarn build
 ```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
