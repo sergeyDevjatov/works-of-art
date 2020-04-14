@@ -1,5 +1,7 @@
 # Works of art
 
+## A test assignment project for AIPeople
+
 Before you build the project create `.env.local` file
 based on the `.env.local.example`
 and put an actual api key into the `VUE_APP_API_KEY` variable
